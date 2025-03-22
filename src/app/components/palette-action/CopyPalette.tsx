@@ -1,11 +1,11 @@
-import { Copy } from "lucide-react";
-import { toast } from "sonner";
-import { TooltipTrigger } from "@radix-ui/react-tooltip";
-import { clipboard } from "@/app/utils/clipboard";
-import { tailwindGenerator } from "@/lib/tailwindGenerator";
-import { Tooltip, TooltipContent, TooltipProvider } from "@/components/ui/tooltip";
 import { Button } from "@/components/ui/button";
+import { clipboard } from "@/app/utils/clipboard";
+import { Copy } from "lucide-react";
 import { Palette } from "@/app/utils/palettes";
+import { tailwindGenerator } from "@/lib/tailwindGenerator";
+import { toast } from "sonner";
+import { Tooltip, TooltipContent, TooltipProvider } from "@/components/ui/tooltip";
+import { TooltipTrigger } from "@radix-ui/react-tooltip";
 
 interface CopyPaletteProps {
   colors: { color: string; text: string }[];
@@ -15,11 +15,12 @@ export function CopyPalette({ colors }: CopyPaletteProps) {
 
   const handlerClick = async () => {
     const response = await tailwindGenerator(colors);
+    console.log(response);
 
     const palette: Palette | string = response[1];
 
     clipboard(JSON.stringify(palette));
-    toast(`Palette copied correctly! 🐭`);
+    toast(`Palette copied correctly!`);
   };
 
   return (

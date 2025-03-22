@@ -87,7 +87,7 @@ const SavePaletteSection = () => {
           <h2 className="pb-6 text-4xl font-bold font-headings">
             Saved Palettes
           </h2>
-          <div className="flex flex-wrap justify-between w-full max-w-full gap-y-8">
+          <div className="flex gap-10 flex-wrap justify-between w-full max-w-full gap-y-8">
             {Object.entries(savedPalettes).map(([name, palette]) => {
               return (
                 <div key={name} className="flex flex-col gap-[12px]">

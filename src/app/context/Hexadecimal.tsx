@@ -1,3 +1,4 @@
+'use client';
 
 import { useDeferredValue, useEffect, useState } from "react";
 import { HexadecimalContext, IValuesProvider } from "./hexadecimal.context";

@@ -33,7 +33,7 @@ export const Palette = ({ colors }: PaletteProps) => {
                   onClick={() => {
                     clipboard(color);
                     setLastColorCopied(color);
-                    toast(`Color ${color} copied correctly! 🐭`);
+                    toast(`Color ${color} copied correctly!`);
                   }}
                   style={{ backgroundColor: color, color: text }}
                   className={`w-[100px] h-[100px] ${

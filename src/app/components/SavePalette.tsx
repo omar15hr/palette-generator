@@ -16,7 +16,7 @@ export function SavePalette({ colors, action }: SavePaletteProps) {
       onClick={() => {
         tailwindGenerator(colors).then(([name, palette]) => {
           action(name.toString(), palette);
-          toast(`Palette saved correctly! 🐭`);
+          toast(`Palette saved correctly!`);
         });
       }}
       className="rounded-[4px] cursor-pointer"

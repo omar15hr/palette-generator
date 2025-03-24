@@ -9,10 +9,10 @@ import { Toaster } from "@/components/ui/sonner";
 import { useContext, useEffect, useMemo, useState } from "react";
 import AppController from "./page.controller";
 import ColorPicker from "./components/ColorPicker";
-import Palette from "./components/Palette";
 import SavePaletteSection from "./components/save-palette-section/SavePaletteSection";
 import store from "@/app/utils/palettes";
 import { ValidateHexadecimal } from "./utils/hexadecimal-validator";
+import Palette from "@/app/components/Palette";
 
 const controller: AppController = new AppController();
 

@@ -19,7 +19,7 @@ type PaletteProps = {
   position?: "start" | "center" | "end";
 };
 
-export const Palette = ({ colors }: PaletteProps) => {
+export const PaletteComponent = ({ colors }: PaletteProps) => {
   const [lastColorCopied, setLastColorCopied] = useState("");
 
   return (

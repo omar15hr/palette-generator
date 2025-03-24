@@ -12,7 +12,7 @@ import ColorPicker from "./components/ColorPicker";
 import SavePaletteSection from "./components/save-palette-section/SavePaletteSection";
 import store from "@/app/utils/palettes";
 import { ValidateHexadecimal } from "./utils/hexadecimal-validator";
-import { Palette } from "./components/Palette";
+import { PaletteComponent } from "./components/PaletteComponent";
 
 const controller: AppController = new AppController();
 
@@ -39,7 +39,7 @@ export default function Home() {
           </div>
           <Toaster />
           <SavePalette colors={colors} action={store.add} />
-          <Palette colors={colors} variant={"Primary"} />
+          <PaletteComponent colors={colors} variant={"Primary"} />
           <div className="flex gap-4">
             <Button
               variant={"default"}

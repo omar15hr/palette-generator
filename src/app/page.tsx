@@ -12,7 +12,7 @@ import ColorPicker from "./components/ColorPicker";
 import SavePaletteSection from "./components/save-palette-section/SavePaletteSection";
 import store from "@/app/utils/palettes";
 import { ValidateHexadecimal } from "./utils/hexadecimal-validator";
-import Palette from "@/app/components/Palette";
+import { Palette } from "./components/Palette";
 
 const controller: AppController = new AppController();
 

@@ -6,7 +6,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { memo, useState } from "react";
+import { useState } from "react";
 import { toast } from "sonner";
 import { clipboard } from "../utils/clipboard";
 
@@ -58,4 +58,3 @@ export const Palette = ({ colors }: PaletteProps) => {
   );
 };
 
-export default memo(Palette);

@@ -48,9 +48,6 @@ export default function Home() {
             >
               Generate random <Shuffle />
             </Button>
-            <Button variant={"default"} className="cursor-pointer">
-              Generate with AI
-            </Button>
           </div>
         </div>
       </section>

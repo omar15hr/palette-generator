@@ -27,7 +27,7 @@ export default function Home() {
     setColor(provider.hexColor);
   }, [provider.hexColor]);
   return (
-    <>
+    <div className="min-h-screen overflow-y-auto">
       <section className="pt-10">
         <div className="flex flex-col items-center justify-center w-full mx-auto gap-[36px] mb-10">
           <h1 className="text-2xl font-bold font-headings lg:text-6xl">
@@ -55,6 +55,6 @@ export default function Home() {
       <section className="flex p-10">
         <SavePaletteSection />
       </section>
-    </>
+    </div>
   );
 }

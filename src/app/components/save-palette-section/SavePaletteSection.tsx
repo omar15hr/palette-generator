@@ -82,7 +82,7 @@ const SavePaletteSection = () => {
   );
 
   return (
-    <div className="flex gap-[32px] min-h-screen">
+    <div className="flex gap-[32px]">
       {savedPalettes && Object.keys(savedPalettes).length > 0 && (
         <div className="flex flex-col w-full gap-4">
           <h2 className="pb-6 text-4xl font-bold font-headings">

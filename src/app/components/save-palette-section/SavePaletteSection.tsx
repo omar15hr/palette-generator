@@ -77,7 +77,8 @@ const SavePaletteSection = () => {
 
   const savedPalettes = useSyncExternalStore<Palettes>(
     store.subscribe,
-    store.getSnapshot
+    store.getSnapshot,
+    () => ({}),
   );
 
   return (

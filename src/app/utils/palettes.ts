@@ -14,7 +14,10 @@ interface Store {
   getSnapshot: () => Palettes
 }
 
-let palettes: Palettes = JSON.parse(localStorage.getItem('palettes')!) || {} ;
+let palettes: Palettes = {};
+if (typeof window !== "undefined") {
+  palettes = JSON.parse(localStorage.getItem('palettes') || '{}');
+}
 
 type Listener = () => void;
 type Unsubscribe = () => void;

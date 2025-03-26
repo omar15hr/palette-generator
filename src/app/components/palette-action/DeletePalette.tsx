@@ -31,7 +31,7 @@ export function DeletePalette({ name, action }: DeletePaletteProps) {
 
   const deletePalette = () => {
     action(name);
-    toast(`Palette deleted correctly! 🐭`);
+    toast(`Palette deleted correctly!`);
   };
 
   return (
